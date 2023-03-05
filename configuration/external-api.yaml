@@ -1,0 +1,2 @@
+app.properties:
+  first-property: "OVERRIDEN FIRST"
