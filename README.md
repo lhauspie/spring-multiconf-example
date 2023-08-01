@@ -33,7 +33,7 @@ The problem grows with the number of components.
 
 The solution we're exploring with my team is to make a kind of configuration composition.
 
-Instead of having two configuration files `application-batch.yaml` and `application-api.yaml` that will contain config duplication, I would like to have for example `external-api.yaml` and `message-borker.yaml` and then compose them at runtime for each component.
+Instead of having two configuration files `application-batch.yaml` and `application-api.yaml` that will contain config duplication, I would like to have for example `external-api.yaml` and `message-broker.yaml` and then compose them at runtime for each component.
 
 The team uses Spring Boot for all our backend components so let's try to compose configuration with spring boot.
 
@@ -59,7 +59,7 @@ app.properties:
   first-property: "OVERRIDEN FIRST"
 ```
 
-`message-borker.yaml` (the configuration file dedicated to Message Broker):
+`message-broker.yaml` (the configuration file dedicated to Message Broker):
 ```yaml
 app.properties:
   second-property: "OVERRIDEN SECOND"
